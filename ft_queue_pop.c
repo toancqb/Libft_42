@@ -6,7 +6,7 @@
 /*   By: qtran <marvin@42.fr>                       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/07/02 23:16:02 by qtran             #+#    #+#             */
-/*   Updated: 2018/07/02 23:27:53 by qtran            ###   ########.fr       */
+/*   Updated: 2018/07/03 08:59:13 by qtran            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,7 +20,8 @@ static void		pop(void *c, t_list **tmp)
 
 void			*ft_queue_pop(t_list **st)
 {
-	t_list *tmp;
+	t_list	*tmp;
+	void	*c;
 
 	tmp = *st;
 	if (!(*st) || !(c = (void*)malloc(sizeof(void) * tmp->content_size)) || !c)
